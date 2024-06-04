@@ -4,7 +4,6 @@
   "files": [
     "../spec",
     "../specs.json",
-    "../package.json",
     "../README.md",
     "create-spec-up-starterpack.js"
   ],
