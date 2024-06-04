@@ -1,6 +1,10 @@
 {
   "name": "spec-up-starterpack",
-  "version": "0.1.1",
+  "version": "0.1.2",
+  "files": [
+    "spec/",
+    "specs.json"
+  ],
   "description": "Quick setup for a specification with the Spec-Up tool.",
   "dependencies": {
     "spec-up": "^0.10.8"
