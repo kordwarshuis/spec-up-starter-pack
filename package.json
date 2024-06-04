@@ -5,6 +5,7 @@
     "../spec",
     "../specs.json",
     "../package.json",
+    "../README.md",
     "create-spec-up-starterpack.js"
   ],
   "description": "Quick setup for a specification with the Spec-Up tool.",
