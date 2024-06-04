@@ -1,6 +1,6 @@
 {
   "name": "create-spec-up-starterpack",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "files": [
     "spec/",
     "specs.json"
