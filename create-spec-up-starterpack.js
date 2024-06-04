@@ -8,7 +8,7 @@ const path = require('path');
 function setupSpecUpStarterPack(targetDir) {
     const specDir = path.join(__dirname, 'spec');
     const configFile = path.join(__dirname, 'specs.json');
-    const package = path.join(__dirname, 'package.json');
+    const packageFile = path.join(__dirname, 'package.json');
 
     if (!fs.existsSync(targetDir)) {
         fs.mkdirSync(targetDir, { recursive: true });
@@ -21,7 +21,7 @@ function setupSpecUpStarterPack(targetDir) {
     fs.copyFileSync(configFile, path.join(targetDir, 'specs.json'));
 
     // Copy package.json
-    fs.copyFileSync(package, path.join(targetDir, 'package.json'));
+    fs.copyFileSync(packageFile, path.join(targetDir, 'package.json'));
 
     console.log('Spec-up starterpack setup complete.');
 }
