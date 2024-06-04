@@ -3,7 +3,8 @@
   "version": "0.1.8",
   "files": [
     "spec/",
-    "specs.json"
+    "specs.json",
+    "package.json"
   ],
   "description": "Quick setup for a specification with the Spec-Up tool.",
   "bin": {
