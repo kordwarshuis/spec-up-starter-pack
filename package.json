@@ -1,5 +1,5 @@
 {
-  "name": "spec-up-starterpack",
+  "name": "create-spec-up-starterpack",
   "version": "0.1.4",
   "files": [
     "spec/",
