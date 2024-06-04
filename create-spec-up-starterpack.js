@@ -4,11 +4,11 @@ const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
-// Function to copy /spec directory and specs.json to the target directory
+// Function to copy /spec directory, specs.json, and package.json to the target directory
 function setupSpecUpStarterPack(targetDir) {
-    const specDir = path.join(__dirname, 'spec');
-    const configFile = path.join(__dirname, 'specs.json');
-    const packageFile = path.join(__dirname, 'package.json');
+    const specDir = path.join(__dirname, '../spec');
+    const configFile = path.join(__dirname, '../specs.json');
+    const packageFile = path.join(__dirname, '../package.json');
 
     if (!fs.existsSync(targetDir)) {
         fs.mkdirSync(targetDir, { recursive: true });
