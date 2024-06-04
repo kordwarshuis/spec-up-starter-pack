@@ -6,16 +6,32 @@ const path = require('path');
 
 // Function to copy /spec directory, specs.json, and package.json to the target directory
 function setupSpecUpStarterPack(targetDir) {
-    const specDir = path.join(__dirname, '../spec');
-    const configFile = path.join(__dirname, '../specs.json');
-    const packageFile = path.join(__dirname, '../package.json');
+    const specDir = path.join(__dirname, 'spec');
+    const configFile = path.join(__dirname, 'specs.json');
+    const packageFile = path.join(__dirname, 'package.json');
 
     if (!fs.existsSync(targetDir)) {
         fs.mkdirSync(targetDir, { recursive: true });
     }
 
+    // Check if source files and directories exist
+    if (!fs.existsSync(specDir)) {
+        console.error(`Source directory ${specDir} does not exist.`);
+        process.exit(1);
+    }
+
+    if (!fs.existsSync(configFile)) {
+        console.error(`Source file ${configFile} does not exist.`);
+        process.exit(1);
+    }
+
+    if (!fs.existsSync(packageFile)) {
+        console.error(`Source file ${packageFile} does not exist.`);
+        process.exit(1);
+    }
+
     // Copy /spec directory
-    execSync(`cp -r ${specDir} ${targetDir}`);
+    execSync(`cp -r ${specDir} ${targetDir}/spec`);
 
     // Copy specs.json
     fs.copyFileSync(configFile, path.join(targetDir, 'specs.json'));
