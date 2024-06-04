@@ -8,7 +8,8 @@ const path = require('path');
 function setupSpecUpStarterPack(targetDir) {
     const specDir = path.join(__dirname, 'spec');
     const configFile = path.join(__dirname, 'specs.json');
-    const packageFile = path.join(__dirname, 'package.json');
+    // const packageFile = path.join(__dirname, 'package.json');
+    const readmeFile = path.join(__dirname, 'README.md');
 
     if (!fs.existsSync(targetDir)) {
         fs.mkdirSync(targetDir, { recursive: true });
@@ -25,8 +26,13 @@ function setupSpecUpStarterPack(targetDir) {
         process.exit(1);
     }
 
+    // if (!fs.existsSync(packageFile)) {
+    //     console.error(`Source file ${packageFile} does not exist.`);
+    //     process.exit(1);
+    // }
+
     if (!fs.existsSync(packageFile)) {
-        console.error(`Source file ${packageFile} does not exist.`);
+        console.error(`Source file ${readmeFile} does not exist.`);
         process.exit(1);
     }
 
@@ -36,8 +42,11 @@ function setupSpecUpStarterPack(targetDir) {
     // Copy specs.json
     fs.copyFileSync(configFile, path.join(targetDir, 'specs.json'));
 
-    // Copy package.json
-    fs.copyFileSync(packageFile, path.join(targetDir, 'package.json'));
+    // // Copy package.json
+    // fs.copyFileSync(packageFile, path.join(targetDir, 'package.json'));
+
+    // Copy README.md
+    fs.copyFileSync(readmeFile, path.join(targetDir, 'README.md'));
 
     console.log('Spec-up starterpack setup complete.');
 }
