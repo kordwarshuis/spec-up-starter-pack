@@ -21,7 +21,7 @@ function setupSpecUpStarterPack(targetDir) {
     fs.copyFileSync(configFile, path.join(targetDir, 'specs.json'));
 
     // Copy package.json
-    fs.copyFileSync(configFile, path.join(targetDir, 'package.json'));
+    fs.copyFileSync(package, path.join(targetDir, 'package.json'));
 
     console.log('Spec-up starterpack setup complete.');
 }
