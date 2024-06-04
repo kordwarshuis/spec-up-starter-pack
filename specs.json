@@ -1,0 +1,21 @@
+{
+    "specs": [
+        {
+            "title": "Spec-Up Starterpack Example",
+            "spec_directory": "./spec",
+            "output_path": "./docs",
+            "markdown_paths": [
+                "term-definitions/aal.md",
+                "term-definitions/abac.md"
+            ],
+            "logo": "https://raw.githubusercontent.com/trustoverip/logo-assets/master/logos/ToIP-Logo-Color-SolidDimensional-Horizontal-LightOnDark.svg",
+            "logo_link": "https://github.com/trustoverip/specification-template",
+            "katex": false,
+            "source": {
+                "host": "github",
+                "account": "blockchainbird",
+                "repo": "spec-up-starter-pack"
+            }
+        }
+    ]
+}
