@@ -6,6 +6,9 @@
     "specs.json"
   ],
   "description": "Quick setup for a specification with the Spec-Up tool.",
+  "bin": {
+    "create-spec-up-starterpack": "./create-spec-up-starterpack.js"
+  },
   "dependencies": {
     "spec-up": "^0.10.8"
   },
