@@ -5,8 +5,8 @@
             "spec_directory": "./spec",
             "output_path": "./docs",
             "markdown_paths": [
-                "term-definitions/aal.md",
-                "term-definitions/abac.md"
+                "term-1.md",
+                "term-2.md"
             ],
             "logo": "https://raw.githubusercontent.com/trustoverip/logo-assets/master/logos/ToIP-Logo-Color-SolidDimensional-Horizontal-LightOnDark.svg",
             "logo_link": "https://github.com/trustoverip/specification-template",
