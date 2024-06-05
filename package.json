@@ -2,21 +2,10 @@
   "name": "create-spec-up-starterpack",
   "version": "0.1.14",
   "files": [
-    "spec",
-    "specs.json",
-    "README.md",
-    "create-spec-up-starterpack.js"
+    "starter-files"
   ],
   "description": "Quick setup for a specification with the Spec-Up tool.",
   "bin": {
     "create-spec-up-starterpack": "./create-spec-up-starterpack.js"
-  },
-  "dependencies": {
-    "spec-up": "^0.10.8"
-  },
-  "scripts": {
-    "edit": "node -e \"require('spec-up')()\"",
-    "render": "node -e \"require('spec-up')({ nowatch: true })\"",
-    "dev": "node -e \"require('spec-up')({ dev: true })\""
   }
 }
