@@ -1,14 +1,20 @@
 # Instructions
 
-Run the following command in your terminal:
+Run the following commands in your terminal:
 
 ```
-npm create spec-up-starterpack
+cd spec-up-starterpack
 ```
 
-Then create your markdown files.
+Now you are in the directory where your Spec-Up will run.
 
-For more info, see the Spec-Up site:
+```
+npm run install
+```
+
+Now Spec-Up should be installed.
+
+For more info on how to use Spec-Up, see the Spec-Up site:
 
 Website: <https://identity.foundation/spec-up/>
 
