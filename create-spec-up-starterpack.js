@@ -19,7 +19,7 @@ function setupSpecUpStarterPack(targetDir) {
     }
 
     // Copy /starter-files directory
-    execSync(`cp -r ${starterFilesDir} ${targetDir}/`);
+    execSync(`cp -r ${starterFilesDir} ${targetDir}`);
 
     console.log('Spec-up starterpack setup complete.');
 }
