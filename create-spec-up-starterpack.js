@@ -6,7 +6,7 @@ const path = require('path');
 
 // Function to copy /spec directory, specs.json, and README.md to the target directory
 function setupSpecUpStarterPack(targetDir) {
-    const starterFilesDir = path.join(__dirname, 'starter-files');
+    const starterFilesDir = path.join(__dirname, 'spec-up-starterpack');
 
     if (!fs.existsSync(targetDir)) {
         fs.mkdirSync(targetDir, { recursive: true });
@@ -18,7 +18,7 @@ function setupSpecUpStarterPack(targetDir) {
         process.exit(1);
     }
 
-    // Copy /starter-files directory
+    // Copy 'spec-up-starterpack' directory
     execSync(`cp -r ${starterFilesDir} ${targetDir}`);
 
     console.log('Spec-up starterpack setup complete.');
