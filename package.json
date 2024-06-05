@@ -2,7 +2,7 @@
   "name": "create-spec-up-starterpack",
   "version": "0.1.18",
   "files": [
-    "starter-files"
+    "spec-up-starterpack"
   ],
   "description": "Quick setup for a specification with the Spec-Up tool.",
   "bin": {
