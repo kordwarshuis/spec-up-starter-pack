@@ -21,7 +21,7 @@ function setupSpecUpStarterPack(targetDir) {
     // Copy 'spec-up-starterpack' directory
     execSync(`cp -r ${starterFilesDir} ${targetDir}`);
 
-    console.log('Spec-up starterpack setup complete.');
+    console.log('Spec-up starterpack setup complete.\n\nNow cd into the directory and run "npm install" to install dependencies:\n\ncd spec-up-starterpack\n\nnpm install\n');
 }
 
 // Get the target directory from command line arguments or use current directory
