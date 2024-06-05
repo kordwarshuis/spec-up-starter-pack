@@ -1,2 +1,9 @@
-/.DS_Store
 node_modules
+*.log
+dist
+*.bak
+*.tmp
+.DS_Store
+.env
+coverage
+build
