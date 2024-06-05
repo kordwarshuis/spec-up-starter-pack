@@ -3,7 +3,7 @@
 Run the following command in your terminal:
 
 ```
-npm run install
+npm create spec-up-starterpack
 ```
 
 Then create your markdown files.
